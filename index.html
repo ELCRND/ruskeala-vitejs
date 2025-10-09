@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Рускеала Горный Парк</title>
+  <script type="module" crossorigin src="/assets/index-Cj4fxZMS.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-PdL2TEso.css">
+</head>
+
+<body>
+  <!-- SPRITES -->
+  <svg style="display: none;">
+    <symbol id="sprite-geo" viewBox="0 0 10 13">
+      <path
+        d="M8.6166 2.55769C7.87523 1.23804 6.55839 0.431809 5.09403 0.400998C5.03152 0.399669 4.9686 0.399669 4.90606 0.400998C3.44173 0.431809 2.12489 1.23804 1.38349 2.55769C0.625672 3.90658 0.604938 5.52685 1.32802 6.89196L4.35725 12.6109C4.35861 12.6134 4.35997 12.6159 4.36138 12.6184C4.49466 12.8574 4.73342 13 5.00009 13C5.26674 13 5.5055 12.8573 5.63876 12.6184C5.64016 12.6159 5.64152 12.6134 5.64288 12.6109L8.67212 6.89196C9.39515 5.52685 9.37442 3.90658 8.6166 2.55769ZM5.00005 6.10938C4.05281 6.10938 3.28218 5.31453 3.28218 4.33751C3.28218 3.36049 4.05281 2.56564 5.00005 2.56564C5.94728 2.56564 6.71791 3.36049 6.71791 4.33751C6.71791 5.31453 5.9473 6.10938 5.00005 6.10938Z" />
+    </symbol>
+
+    <symbol id="sprite-phone" viewBox="0 0 11 11">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M10.7986 9.67563C10.7256 9.74845 10.6375 9.84156 10.5441 9.94004C10.3111 10.1874 10.0199 10.4949 9.83745 10.6196C8.87736 11.2757 7.59291 10.9617 6.68435 10.5832C5.48582 10.0838 4.18094 9.16323 3.0093 7.99137C1.83656 6.81943 0.916169 5.51408 0.416787 4.31616C0.0386797 3.40736 -0.275902 2.12259 0.380266 1.16223C0.504869 0.97961 0.813049 0.688902 1.06006 0.455387C1.15889 0.362272 1.25127 0.274293 1.32431 0.201482C1.45399 0.0724407 1.62949 0 1.81242 0C1.99536 0 2.17086 0.0724407 2.30054 0.201482L4.06707 1.9676C4.19604 2.09728 4.26843 2.27274 4.26843 2.45563C4.26843 2.63853 4.19604 2.81398 4.06707 2.94366L3.58585 3.42395C3.42513 3.5835 3.32023 3.79068 3.28675 4.01465C3.25327 4.23863 3.293 4.46743 3.40004 4.667C4.06193 5.91634 5.08378 6.93807 6.33316 7.5998C6.53268 7.7068 6.76143 7.74648 6.98533 7.71295C7.20923 7.67941 7.4163 7.57444 7.57572 7.41368L8.05577 6.93337C8.18544 6.80433 8.36094 6.73188 8.54388 6.73188C8.72682 6.73188 8.90231 6.80433 9.03199 6.93337L10.7986 8.69978C10.9276 8.82942 11 9.00485 11 9.18771C11 9.37057 10.9276 9.546 10.7986 9.67563Z" />
+    </symbol>
+
+    <symbol id="sprite-owl" viewBox="0 0 17 17">
+      <path
+        d="M17 5.28594H14.0037C10.8269 2.52344 6.17312 2.52344 2.99625 5.28594H0C0 5.28594 0.68 6.11469 0.95625 6.89031C0.36125 7.61281 0 8.52656 0 9.53594C0 11.8841 1.90188 13.7859 4.25 13.7859C5.64187 13.7859 6.87437 13.1059 7.65 12.0647L8.5425 13.7859L9.36063 12.0753C10.1363 13.1059 11.3581 13.7859 12.75 13.7859C15.0981 13.7859 17 11.8841 17 9.53594C17 8.52656 16.6388 7.61281 16.0438 6.89031C16.32 6.11469 17 5.28594 17 5.28594ZM4.25 12.7234C2.49688 12.7234 1.0625 11.2891 1.0625 9.53594C1.0625 7.78281 2.49688 6.34844 4.25 6.34844C6.00313 6.34844 7.4375 7.78281 7.4375 9.53594C7.4375 11.2891 6.00313 12.7234 4.25 12.7234ZM12.75 12.7234C10.9969 12.7234 9.5625 11.2891 9.5625 9.53594C9.5625 7.78281 10.9969 6.34844 12.75 6.34844C14.5031 6.34844 15.9375 7.78281 15.9375 9.53594C15.9375 11.2891 14.5031 12.7234 12.75 12.7234Z" />
+      <path
+        d="M4.25 7.41094C3.07806 7.41094 2.125 8.364 2.125 9.53594C2.125 10.7079 3.07806 11.6609 4.25 11.6609C5.42194 11.6609 6.375 10.7079 6.375 9.53594C6.375 8.364 5.42194 7.41094 4.25 7.41094ZM4.25 10.5984C3.66456 10.5984 3.1875 10.1214 3.1875 9.53594C3.1875 8.9505 3.66456 8.47344 4.25 8.47344C4.83544 8.47344 5.3125 8.9505 5.3125 9.53594C5.3125 10.1214 4.83544 10.5984 4.25 10.5984Z" />
+      <path
+        d="M12.75 7.41094C11.5781 7.41094 10.625 8.364 10.625 9.53594C10.625 10.7079 11.5781 11.6609 12.75 11.6609C13.9219 11.6609 14.875 10.7079 14.875 9.53594C14.875 8.364 13.9219 7.41094 12.75 7.41094ZM12.75 10.5984C12.1635 10.5984 11.6875 10.1214 11.6875 9.53594C11.6875 8.9505 12.1635 8.47344 12.75 8.47344C13.3365 8.47344 13.8125 8.9505 13.8125 9.53594C13.8125 10.1214 13.3365 10.5984 12.75 10.5984Z" />
+      <path
+        d="M4.25 10.0672C4.5434 10.0672 4.78125 9.82934 4.78125 9.53594C4.78125 9.24254 4.5434 9.00469 4.25 9.00469C3.9566 9.00469 3.71875 9.24254 3.71875 9.53594C3.71875 9.82934 3.9566 10.0672 4.25 10.0672Z" />
+      <path
+        d="M12.75 10.0672C13.0434 10.0672 13.2812 9.82934 13.2812 9.53594C13.2812 9.24254 13.0434 9.00469 12.75 9.00469C12.4566 9.00469 12.2188 9.24254 12.2188 9.53594C12.2188 9.82934 12.4566 10.0672 12.75 10.0672Z" />
+    </symbol>
+
+    <symbol id="sprite-vk" viewBox="0 0 17 17">
+      <g clip-path="url(#clip0_642_44)">
+        <path
+          d="M16.9099 12.4099C16.8893 12.3655 16.8701 12.3287 16.8523 12.2993C16.5573 11.768 15.9937 11.116 15.1617 10.343L15.1441 10.3253L15.1353 10.3166L15.1264 10.3077H15.1175C14.7399 9.94775 14.5008 9.70572 14.4006 9.5818C14.2174 9.34576 14.1764 9.10683 14.2765 8.86474C14.3473 8.68183 14.613 8.29555 15.0731 7.70537C15.3152 7.39259 15.5068 7.14191 15.6484 6.95305C16.6693 5.5958 17.1119 4.7285 16.9761 4.3508L16.9234 4.26254C16.888 4.2094 16.7965 4.16079 16.6492 4.11646C16.5015 4.07222 16.3127 4.06491 16.0825 4.09439L13.5334 4.112C13.4921 4.09736 13.4332 4.09873 13.3563 4.11646C13.2796 4.13419 13.2412 4.14309 13.2412 4.14309L13.1969 4.16526L13.1617 4.19189C13.1321 4.2095 13.0997 4.24047 13.0642 4.28474C13.029 4.32885 12.9995 4.38063 12.976 4.43962C12.6984 5.15362 12.3829 5.81746 12.0288 6.43111C11.8104 6.79702 11.6099 7.11413 11.4268 7.38264C11.2439 7.65105 11.0905 7.84881 10.9666 7.97558C10.8426 8.10247 10.7307 8.20412 10.6302 8.28091C10.5299 8.35773 10.4533 8.39019 10.4002 8.37832C10.347 8.36645 10.297 8.35467 10.2496 8.34288C10.167 8.28975 10.1006 8.21748 10.0505 8.12603C10.0003 8.03457 9.96641 7.91946 9.94871 7.78079C9.9311 7.64203 9.92068 7.52267 9.91771 7.42232C9.91495 7.32209 9.91622 7.18032 9.9222 6.99741C9.92834 6.81441 9.9311 6.69059 9.9311 6.62567C9.9311 6.40141 9.93547 6.15801 9.94424 5.89543C9.95317 5.63284 9.96039 5.42479 9.96644 5.27152C9.97246 5.11809 9.97525 4.95577 9.97525 4.78464C9.97525 4.61351 9.96483 4.4793 9.94424 4.3819C9.92391 4.28461 9.89269 4.19018 9.85155 4.09864C9.81016 4.00718 9.74958 3.93644 9.6701 3.88621C9.59045 3.83605 9.49143 3.79625 9.3736 3.76667C9.06082 3.69589 8.66254 3.65761 8.17858 3.65165C7.08109 3.63987 6.37589 3.71074 6.06315 3.86417C5.93923 3.92899 5.8271 4.01757 5.72684 4.12961C5.6206 4.25947 5.60578 4.33034 5.68248 4.342C6.03658 4.39504 6.28726 4.52193 6.4348 4.72254L6.48796 4.82885C6.52932 4.90555 6.57061 5.04133 6.61194 5.23602C6.6532 5.43071 6.67983 5.64608 6.69155 5.88201C6.721 6.31283 6.721 6.68163 6.69155 6.98842C6.66201 7.29534 6.6341 7.53427 6.60747 7.7054C6.58084 7.87653 6.54104 8.0152 6.48796 8.12138C6.43479 8.22759 6.39942 8.29251 6.38169 8.31607C6.36399 8.33963 6.34923 8.35448 6.33751 8.36031C6.26081 8.3897 6.18105 8.40467 6.09849 8.40467C6.01581 8.40467 5.91555 8.36332 5.79756 8.28066C5.67959 8.19801 5.55717 8.08449 5.43028 7.93989C5.30339 7.79527 5.16029 7.59317 5.00091 7.33356C4.84165 7.07396 4.67641 6.76713 4.50528 6.41309L4.3637 6.15634C4.27519 5.99116 4.15428 5.75065 4.00086 5.43502C3.84734 5.11927 3.71164 4.81384 3.59368 4.5188C3.54653 4.39489 3.47569 4.30055 3.38129 4.23563L3.33699 4.209C3.30753 4.18544 3.26026 4.16042 3.1954 4.13376C3.13045 4.10713 3.06268 4.08803 2.99181 4.07628L0.566586 4.09389C0.318759 4.09389 0.150606 4.15004 0.0620653 4.26217L0.0266304 4.31521C0.00892848 4.34476 0 4.39194 0 4.45689C0 4.52181 0.0177019 4.60148 0.0531368 4.69582C0.407176 5.5279 0.792185 6.33038 1.20817 7.10338C1.62415 7.87637 1.98562 8.49904 2.29239 8.97082C2.59921 9.44295 2.91195 9.88853 3.23062 10.3074C3.54929 10.7264 3.76022 10.9949 3.86343 11.1128C3.96675 11.231 4.04792 11.3194 4.10691 11.3783L4.32823 11.5907C4.46985 11.7324 4.67781 11.902 4.9522 12.0997C5.22666 12.2974 5.53051 12.4921 5.8639 12.684C6.19735 12.8757 6.58528 13.032 7.02789 13.153C7.47044 13.274 7.90117 13.3226 8.32016 13.2992H9.33807C9.54451 13.2814 9.70091 13.2164 9.80722 13.1044L9.84243 13.06C9.86612 13.0248 9.88829 12.9701 9.90875 12.8965C9.92946 12.8227 9.93975 12.7415 9.93975 12.6531C9.9337 12.3994 9.95302 12.1708 9.99716 11.9672C10.0413 11.7637 10.0916 11.6103 10.1478 11.5069C10.204 11.4037 10.2674 11.3166 10.338 11.246C10.4088 11.1752 10.4592 11.1323 10.4888 11.1176C10.5181 11.1027 10.5416 11.0926 10.5593 11.0866C10.7009 11.0394 10.8676 11.0851 11.0596 11.2239C11.2514 11.3626 11.4313 11.5338 11.5995 11.7373C11.7677 11.941 11.9698 12.1695 12.2058 12.4232C12.4419 12.6769 12.6484 12.8656 12.8254 12.9897L13.0023 13.0959C13.1205 13.1668 13.2739 13.2317 13.4628 13.2907C13.6513 13.3497 13.8165 13.3644 13.9583 13.3349L16.2241 13.2996C16.4482 13.2996 16.6226 13.2625 16.7463 13.1888C16.8703 13.1151 16.9439 13.0338 16.9676 12.9455C16.9913 12.857 16.9926 12.7566 16.9721 12.6444C16.9511 12.5324 16.9305 12.4541 16.9099 12.4099Z" />
+      </g>
+      <defs>
+        <clipPath id="clip0_642_44">
+          <rect width="17" height="17" />
+        </clipPath>
+      </defs>
+    </symbol>
+
+    <symbol id="sprite-tg" viewBox="0 0 17 17">
+      <path
+        d="M1.3905 8.41067L4.81198 9.57269L12.935 4.60668C13.0527 4.53466 13.1734 4.69458 13.0718 4.78806L6.9221 10.4486L6.69341 13.6176C6.676 13.8587 6.96639 13.9929 7.13874 13.8234L9.03222 11.9615L12.4937 14.5818C12.8668 14.8643 13.4071 14.6652 13.5077 14.2082L15.9179 3.26448C16.0554 2.64017 15.4437 2.11336 14.8467 2.34199L1.3731 7.50138C0.950433 7.66325 0.961945 8.26515 1.3905 8.41067Z" />
+    </symbol>
+
+    <symbol id="sprite-arrow-left" viewBox="0 0 14 12">
+      <path
+        d="M13 6.9956L3 6.9956L6.29 10.288C6.38373 10.381 6.45812 10.4917 6.50889 10.6136C6.55966 10.7356 6.5858 10.8664 6.5858 10.9985C6.5858 11.1306 6.55966 11.2614 6.50889 11.3833C6.45812 11.5053 6.38373 11.616 6.29 11.709C6.10264 11.8954 5.84919 12 5.585 12C5.32081 12 5.06736 11.8954 4.88 11.709L0.59 7.4059C0.214412 7.03228 0.00223231 6.52484 -5.24984e-07 5.99488C0.00486602 5.4684 0.216844 4.96504 0.59 4.59387L4.88 0.290772C4.97324 0.198123 5.0838 0.12476 5.20537 0.0748706C5.32694 0.024981 5.45714 -0.000458241 5.58853 6.18715e-06C5.71993 0.000470615 5.84995 0.0268302 5.97116 0.077579C6.09238 0.128327 6.20242 0.20247 6.295 0.295776C6.38758 0.389082 6.46089 0.499723 6.51075 0.621381C6.5606 0.74304 6.58602 0.873333 6.58556 1.00482C6.58509 1.13631 6.55875 1.26642 6.50804 1.38772C6.45733 1.50903 6.38324 1.61915 6.29 1.7118L3 4.99416L13 4.99416C13.2652 4.99416 13.5196 5.09959 13.7071 5.28726C13.8946 5.47494 14 5.72947 14 5.99488C14 6.26029 13.8946 6.51483 13.7071 6.7025C13.5196 6.89017 13.2652 6.9956 13 6.9956Z"
+        fill="inherit" />
+    </symbol>
+    <symbol id="sprite-arrow-right" viewBox="0 0 14 12">
+      <path
+        d="M1 6.9956L11 6.9956L7.71 10.288C7.61627 10.381 7.54188 10.4917 7.49111 10.6136C7.44034 10.7356 7.4142 10.8664 7.4142 10.9985C7.4142 11.1306 7.44034 11.2614 7.49111 11.3833C7.54188 11.5053 7.61627 11.616 7.71 11.709C7.89736 11.8954 8.15081 12 8.415 12C8.67919 12 8.93264 11.8954 9.12 11.709L13.41 7.4059C13.7856 7.03228 13.9978 6.52484 14 5.99488C13.9951 5.4684 13.7832 4.96504 13.41 4.59387L9.12 0.290772C9.02676 0.198123 8.9162 0.12476 8.79463 0.0748706C8.67306 0.024981 8.54286 -0.000458241 8.41147 6.18715e-06C8.28007 0.000470615 8.15005 0.0268302 8.02884 0.077579C7.90762 0.128327 7.79758 0.20247 7.705 0.295776C7.61242 0.389082 7.53911 0.499723 7.48925 0.621381C7.4394 0.74304 7.41398 0.873333 7.41444 1.00482C7.41491 1.13631 7.44125 1.26642 7.49196 1.38772C7.54267 1.50903 7.61676 1.61915 7.71 1.7118L11 4.99416L1 4.99416C0.734784 4.99416 0.480429 5.09959 0.292893 5.28726C0.105357 5.47494 5.48187e-07 5.72947 5.24984e-07 5.99488C5.01781e-07 6.26029 0.105357 6.51483 0.292893 6.7025C0.480429 6.89017 0.734784 6.9956 1 6.9956Z"
+        fill="inherit" />
+    </symbol>
+  </svg>
+
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="header__top ">
+      <div class="header__top-container container">
+
+        <div class="header__logo">
+          <picture class="header__logo-image">
+            <source media="(max-width: 767px)" type="image/webp" srcset="images/common/logo.webp" width="59"
+              height="69">
+            <source type="image/webp" srcset="images/common/logo.webp">
+            <img src="images/common/logo.png" alt="Рускеала" width="64" height="80">
+          </picture>
+          <span class="header__logo-title">Рускеала Горный Парк</span>
+          <address class="header__logo-address">Республика Карелия, г. Сортавала</address>
+        </div>
+
+        <div class="header__route">
+          <span class="header__route-title">Как доехать?</span>
+
+          <a href="#" class="header__route-link">
+            <div class="header__route-icon">
+              <svg width="10" height="13" fill="#fff">
+                <use xlink:href="#sprite-geo"></use>
+              </svg>
+            </div>
+            <span class="header__route-text">из Санкт-Петербурга</span>
+          </a>
+
+          <a href="#" class="header__route-link">
+            <div class="header__route-icon">
+              <svg width="10" height="13" fill="#fff">
+                <use xlink:href="#sprite-geo"></use>
+              </svg>
+            </div>
+            <span class="header__route-text">из Москвы</span>
+          </a>
+
+        </div>
+
+        <ul class="header__contacts">
+
+          <li class="header__contacts-item">
+            <a href="tel:+79216215050" class="header__contacts-link">
+              <div class="header__contacts-icon">
+                <svg width="11" height="11" fill="#fff">
+                  <use xlink:href="#sprite-phone"></use>
+                </svg>
+              </div>
+              <span class="header__contacts-text">+7 (921) 621-50-50</span>
+            </a>
+          </li>
+
+          <li class="header__contacts-item">
+            <a href="#" class="header__contacts-link">
+              <div class="header__contacts-icon">
+                <svg width="17" height="17" fill="#fff">
+                  <use xlink:href="#sprite-owl"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+
+          <li class="header__contacts-item">
+            <a href="#" class="header__contacts-link">
+              <div class="header__contacts-icon">
+                <svg width="17" height="17" fill="#fff">
+                  <use xlink:href="#sprite-vk"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+
+          <li class="header__contacts-item">
+            <a href="#" class="header__contacts-link">
+              <div class="header__contacts-icon">
+                <svg width="17" height="17" fill="#fff">
+                  <use xlink:href="#sprite-tg"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+
+        <a href="#" class="header__ticket-btn">Купить билет</a>
+
+        <button type="button" class="header__menu-btn" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="header__bottom-container container">
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">О парке</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Билеты и цены</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Рускеала детям</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Кафе</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Как добраться</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Партнеры</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="header__cart">
+          <div class="header__cart-icon">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M19.4198 8.97296L16.2948 3.76463C16.0729 3.39484 15.5927 3.27505 15.2229 3.49692C14.8531 3.7188 14.7333 4.19901 14.9552 4.5688L18.0802 9.77713C18.3021 10.1469 18.7823 10.2667 19.1521 10.0448C19.5218 9.82296 19.6416 9.34276 19.4198 8.97296Z"
+                fill="#696C74" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.91976 9.77713L10.0448 4.5688C10.2666 4.19901 10.1468 3.7188 9.77705 3.49692C9.40726 3.27505 8.92705 3.39484 8.70518 3.76463L5.58018 8.97296C5.3583 9.34276 5.47809 9.82296 5.84788 10.0448C6.21768 10.2667 6.69788 10.1469 6.91976 9.77713Z"
+                fill="#696C74" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22.6459 9.50104C22.6834 9.275 22.6188 9.04375 22.4709 8.86875C22.3219 8.69479 22.1042 8.59375 21.875 8.59375H3.12503C2.89587 8.59375 2.67816 8.69479 2.5292 8.86875C2.38128 9.04375 2.3167 9.275 2.3542 9.50104C2.3542 9.50104 3.41878 16.0052 3.94274 19.2125C4.16983 20.5979 5.3667 21.6146 6.76983 21.6146H18.2302C19.6334 21.6146 20.8302 20.5979 21.0573 19.2125L22.6459 9.50104ZM11.7188 13.0208V17.1875C11.7188 17.6188 12.0688 17.9688 12.5 17.9688C12.9313 17.9688 13.2813 17.6188 13.2813 17.1875V13.0208C13.2813 12.5896 12.9313 12.2396 12.5 12.2396C12.0688 12.2396 11.7188 12.5896 11.7188 13.0208ZM15.8855 13.0208V17.1875C15.8855 17.6188 16.2355 17.9688 16.6667 17.9688C17.098 17.9688 17.448 17.6188 17.448 17.1875V13.0208C17.448 12.5896 17.098 12.2396 16.6667 12.2396C16.2355 12.2396 15.8855 12.5896 15.8855 13.0208ZM7.55212 13.0208V17.1875C7.55212 17.6188 7.90212 17.9688 8.33337 17.9688C8.76462 17.9688 9.11462 17.6188 9.11462 17.1875V13.0208C9.11462 12.5896 8.76462 12.2396 8.33337 12.2396C7.90212 12.2396 7.55212 12.5896 7.55212 13.0208Z"
+                fill="#696C74" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22.9163 8.5938H2.08301C1.65176 8.5938 1.30176 8.9438 1.30176 9.37505C1.30176 9.8063 1.65176 10.1563 2.08301 10.1563H22.9163C23.3476 10.1563 23.6976 9.8063 23.6976 9.37505C23.6976 8.9438 23.3476 8.5938 22.9163 8.5938Z"
+                fill="#696C74" />
+            </svg>
+          </div>
+          <span class="header__cart-count">0</span>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Правила парка</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Цены</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Мероприятия</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Точки питания</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Развлечения для всей семьи</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Мастерские</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Сувенирные лавки</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Историко-культурный центр</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Официальная гостиница горного
+            парка</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Галерея</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">СМИ</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Партнеры</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Как добраться из спб, птз,
+            москва</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+        <li class="header__menu-item"><a href="#" class="header__menu-link">Форма обратной связи</a></li>
+      </ul>
+    </div>
+
+
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__scroll-dot"></div>
+
+    <div class="hero__bg">
+      <picture>
+        <source type="image/webp" srcset="images/hero/hero-bg.webp" width="1440" height="909">
+
+
+        <img fetchpriority="high" loading="eager" src="images/hero/hero-bg.png" alt="background" width="1440"
+          height="909" draggable="false">
+      </picture>
+    </div>
+
+    <div class="hero__container container">
+
+      <div class="hero__places">
+        <button type="button" class="hero__place hero__place--terminal" data-id="terminal">
+          ВОКЗАЛ РУСКЕАЛЬСКОГО ЭКСПРЕССА
+        </button>
+
+        <button type="button" class="hero__place hero__place--lake" data-id="lake">
+          ОЗЕРО СВЕТЛОЕ
+        </button>
+
+        <button type="button" class="hero__place hero__place--career" data-id="career">
+          ИТАЛЬЯНСКИЙ КАРЬЕР
+        </button>
+
+        <button type="button" class="hero__place hero__place--heart" data-id="heart">
+          СЕРДЦЕ РУСКЕАЛА
+        </button>
+
+        <button type="button" class="hero__place hero__place--canyon" data-id="canyon">
+          МРАМОРНЫЙ КАНЬОН
+        </button>
+
+        <button type="button" class="hero__place hero__place--parking" data-id="parking">
+          ПАРКОВКА
+        </button>
+
+        <button type="button" class="hero__places-btn" aria-label="Закрыть">
+          <svg width="14" height="12" aria-hidden="true" viewBox="0 0 14 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13 5.0044H3L6.29 1.71203C6.38373 1.619 6.45812 1.50832 6.50889 1.38637C6.55966 1.26442 6.5858 1.13362 6.5858 1.00151C6.5858 0.869407 6.55966 0.738607 6.50889 0.61666C6.45812 0.494713 6.38373 0.384032 6.29 0.291002C6.10264 0.104617 5.84919 0 5.585 0C5.32081 0 5.06736 0.104617 4.88 0.291002L0.59 4.5941C0.214412 4.96772 0.00223279 5.47516 0 6.00512C0.00486659 6.5316 0.216844 7.03496 0.59 7.40613L4.88 11.7092C4.97324 11.8019 5.0838 11.8752 5.20537 11.9251C5.32694 11.975 5.45714 12.0005 5.58854 12C5.71993 11.9995 5.84995 11.9732 5.97116 11.9224C6.09238 11.8717 6.20242 11.7975 6.295 11.7042C6.38758 11.6109 6.46089 11.5003 6.51075 11.3786C6.5606 11.257 6.58602 11.1267 6.58556 10.9952C6.58509 10.8637 6.55875 10.7336 6.50804 10.6123C6.45733 10.491 6.38324 10.3809 6.29 10.2882L3 7.00584H13C13.2652 7.00584 13.5196 6.90041 13.7071 6.71273C13.8946 6.52506 14 6.27053 14 6.00512C14 5.73971 13.8946 5.48517 13.7071 5.2975C13.5196 5.10983 13.2652 5.0044 13 5.0044Z"
+              fill="#fff" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="hero__modal">
+        <div class="hero__modal-header">
+          <picture class="hero__modal-logo">
+            <source media="(max-width: 767px)" type="image/webp" srcset="images/common/logo.webp" width="62"
+              height="72">
+            <source type="image/webp" srcset="images/common/logo.webp">
+            <img src="images/common/logo.png" alt="Рускеала" width="64" height="80">
+          </picture>
+          <h2 class="hero__modal-title"></h2>
+          <img src="images/hero/hero-modal.webp" alt="" width="80" height="90" aria-hidden="true"
+            class="hero__modal-decoration" draggable="false" loading="lazy">
+        </div>
+
+        <div class="hero__modal-body">
+
+          <p class="hero__modal-description"></p>
+
+          <button type="button" class="hero__modal-view" aria-label="АЭРОПАНОРАМЫ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3B6F53" width="24" height="24">
+              <path
+                d="M9 3H15L17 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V6C2 5.44772 2.44772 5 3 5H7L9 3ZM12 19C15.3137 19 18 16.3137 18 13C18 9.68629 15.3137 7 12 7C8.68629 7 6 9.68629 6 13C6 16.3137 8.68629 19 12 19ZM12 17C9.79086 17 8 15.2091 8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+
+        <span class="hero__modal-close">&times;</span>
+      </div>
+
+
+
+      <div class="hero__menu">
+        <div class="hero__menu-wrapper">
+
+          <div class="hero__logo">
+            <picture class="hero__logo-image">
+              <source media="(max-width: 767px)" type="image/webp" srcset="images/common/logo.webp" width="60"
+                height="68">
+
+              <source type="image/webp" srcset="images/common/logo.webp">
+
+              <img src="images/common/logo.png" alt="Рускеала" width="80" height="90" draggable="false">
+            </picture>
+            <h1 class="hero__logo-title">
+              <span>Рускеала</span>
+              <span>Горный Парк</span>
+            </h1>
+          </div>
+
+          <ul class="hero__list">
+            <li class="hero__menu-item">
+              <h2 class="hero__menu-title">АЭРОПАНОРАМЫ</h2>
+            </li>
+            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Белая гора</a></li>
+            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Бургерз</a></li>
+            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Большой каньон</a></li>
+            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Дор. справа от каньона</a></li>
+            <li class="hero__menu-item"><a href="#" class="hero__menu-link">ИКЦ</a></li>
+            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Кафе Лето</a></li>
+            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Кафе Кахвила</a></li>
+          </ul>
+
+        </div>
+
+        <button type="button" class="hero__menu-btn" aria-label="Закрыть">
+          <svg width="14" height="12" aria-hidden="true" viewBox="0 0 14 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13 5.0044H3L6.29 1.71203C6.38373 1.619 6.45812 1.50832 6.50889 1.38637C6.55966 1.26442 6.5858 1.13362 6.5858 1.00151C6.5858 0.869407 6.55966 0.738607 6.50889 0.61666C6.45812 0.494713 6.38373 0.384032 6.29 0.291002C6.10264 0.104617 5.84919 0 5.585 0C5.32081 0 5.06736 0.104617 4.88 0.291002L0.59 4.5941C0.214412 4.96772 0.00223279 5.47516 0 6.00512C0.00486659 6.5316 0.216844 7.03496 0.59 7.40613L4.88 11.7092C4.97324 11.8019 5.0838 11.8752 5.20537 11.9251C5.32694 11.975 5.45714 12.0005 5.58854 12C5.71993 11.9995 5.84995 11.9732 5.97116 11.9224C6.09238 11.8717 6.20242 11.7975 6.295 11.7042C6.38758 11.6109 6.46089 11.5003 6.51075 11.3786C6.5606 11.257 6.58602 11.1267 6.58556 10.9952C6.58509 10.8637 6.55875 10.7336 6.50804 10.6123C6.45733 10.491 6.38324 10.3809 6.29 10.2882L3 7.00584H13C13.2652 7.00584 13.5196 6.90041 13.7071 6.71273C13.8946 6.52506 14 6.27053 14 6.00512C14 5.73971 13.8946 5.48517 13.7071 5.2975C13.5196 5.10983 13.2652 5.0044 13 5.0044Z"
+              fill="#3B6F53" />
+          </svg>
+        </button>
+
+      </div>
+
+
+    </div>
+
+    <div class="gallery">
+      <div class="gallery__overlay"></div>
+      <div class="gallery__container">
+        <button class="gallery__close" aria-label="Закрыть галерею">&times;</button>
+        <button class="gallery__prev" aria-label="Предыдущее фото">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </button>
+        <div class="gallery__content">
+          <img class="gallery__image" src="" alt="">
+        </div>
+        <button class="gallery__next" aria-label="Следующее фото">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+          </svg>
+        </button>
+        <div class="gallery__counter"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TICKET -->
+  <section class="ticket">
+    <div class="ticket__container container">
+      <div class="ticket__wrapper">
+        <h2 class="ticket__title">Купить входной билет горный парк Рускеала</h2>
+
+        <div class="ticket__form-container">
+          <form class="ticket__form" id="ticketForm">
+
+            <div class="ticket__form-group">
+
+              <label class="ticket__form-label" for="ticket-select-btn">Категория билета</label>
+              <div class="ticket__select custom-select">
+                <input type="hidden" name="ticketType" class="custom-select__input" value="adult">
+
+                <button type="button" class="custom-select__btn" id="ticket-select-btn">
+                  <span class="custom-select__text">Взрослый</span>
+                  <svg class="custom-select__icon" width="15" height="9" viewBox="0 0 15 9" fill="none"
+                    aria-hidden="true">
+                    <path
+                      d="M14.5764 0.928487C14.9668 1.31891 14.9666 1.952 14.5764 2.34255L8.21214 8.70681C7.82161 9.09733 7.1886 9.09733 6.79808 8.70681L0.433818 2.34255C0.0435905 1.952 0.0433922 1.31891 0.433818 0.928486C0.824244 0.538061 1.45733 0.538259 1.84788 0.928486L7.50511 6.58571L13.1623 0.928487C13.5529 0.538259 14.186 0.538062 14.5764 0.928487Z"
+                      fill="#3B6F53" />
+                  </svg>
+                </button>
+
+                <div class="custom-select__dropdown">
+                  <div class="custom-select__list-wraper" id="ticket-select-list">
+                    <ul class="custom-select__list">
+                      <li class="custom-select__item" data-value="adult">Взрослый</li>
+                      <li class="custom-select__item" data-value="children">Детский</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="ticket__form-group">
+              <label class="ticket__form-label" for="ticket-date">Дата посещения</label>
+              <input type="date" name="visitDate" id="ticket-date" class="ticket__form-date" min="2025-01-01"
+                max="2030-12-31">
+            </div>
+
+            <div class="ticket__form-group">
+              <label class="ticket__form-label" for="ticket-counter">Количество</label>
+              <div class="ticket__counter">
+                <button type="button" class="ticket__counter-btn ticket__counter-btn--decrement"
+                  aria-label="Уменьшить">-</button>
+                <input type="number" name="quantity" class="ticket__counter-input" id="ticket-counter" value="1" min="1"
+                  max="99" maxlength="2">
+                <button type="button" class="ticket__counter-btn ticket__counter-btn--increment"
+                  aria-label="Увеличить">+</button>
+              </div>
+            </div>
+
+            <div class="ticket__price">500 ₽</div>
+
+            <button type="button" class="ticket__form-remove" aria-label="Удалить"></button>
+            <button type="submit" class="ticket__submit-btn">Добавить в корзину</button>
+          </form>
+        </div>
+
+        <button type="button" class="ticket__form-add">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path
+              d="M11.9987 0.333008H3.9987C3.15917 0.334066 2.35433 0.668036 1.7607 1.26167C1.16706 1.85531 0.83309 2.66015 0.832031 3.49967V11.4997C0.83309 12.3392 1.16706 13.144 1.7607 13.7377C2.35433 14.3313 3.15917 14.6653 3.9987 14.6663H11.9987C12.8382 14.6653 13.6431 14.3313 14.2367 13.7377C14.8303 13.144 15.1643 12.3392 15.1654 11.4997V3.49967C15.1643 2.66015 14.8303 1.85531 14.2367 1.26167C13.6431 0.668036 12.8382 0.334066 11.9987 0.333008ZM11.332 7.99967H8.4987V10.833C8.4987 10.9656 8.44602 11.0928 8.35225 11.1866C8.25848 11.2803 8.13131 11.333 7.9987 11.333C7.86609 11.333 7.73891 11.2803 7.64514 11.1866C7.55138 11.0928 7.4987 10.9656 7.4987 10.833V7.99967H4.66536C4.53276 7.99967 4.40558 7.947 4.31181 7.85323C4.21804 7.75946 4.16536 7.63228 4.16536 7.49967C4.16536 7.36707 4.21804 7.23989 4.31181 7.14612C4.40558 7.05235 4.53276 6.99967 4.66536 6.99967H7.4987V4.16634C7.4987 4.03373 7.55138 3.90656 7.64514 3.81279C7.73891 3.71902 7.86609 3.66634 7.9987 3.66634C8.13131 3.66634 8.25848 3.71902 8.35225 3.81279C8.44602 3.90656 8.4987 4.03373 8.4987 4.16634V6.99967H11.332C11.4646 6.99967 11.5918 7.05235 11.6856 7.14612C11.7794 7.23989 11.832 7.36707 11.832 7.49967C11.832 7.63228 11.7794 7.75946 11.6856 7.85323C11.5918 7.947 11.4646 7.99967 11.332 7.99967Z"
+              fill="#D72A17" />
+          </svg>
+          <span>Добавить еще</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EXCURSIONS -->
+  <section class="excursions" id="excursions">
+    <div class="excursions__container container">
+
+      <h2 class="excursions__title">Экскурсии Рускеала</h2>
+
+      <div class="excursions__slider">
+
+        <div class="excursions__slider-controls">
+          <a href="#excursions">Все экскурсии</a>
+          <button type="button" aria-label="Назад" class="excursions__slider-btn excursions__slider-btn--prev" disabled>
+            <svg width="14" height="12" fill="white">
+              <use xlink:href="#sprite-arrow-left"></use>
+            </svg>
+          </button>
+          <button type="button" aria-label="Вперед" class="excursions__slider-btn excursions__slider-btn--next">
+            <svg width="14" height="12" fill="white">
+              <use xlink:href="#sprite-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="excursions__slider-wrapper">
+          <ul class="excursions__slider-list">
+
+            <li class="excursions__slider-item excursion">
+              <picture class="excursion__img">
+                <source media="(max-width: 767px)" type="image/webp" srcset="images/excursion/excursion-1-mobile.webp"
+                  width="346" height="271">
+                <source media="(max-width: 767px)" type="image/jpg" srcset="images/excursion/excursion-1-mobile.jpg"
+                  width="346" height="271">
+
+                <source type="image/webp" srcset="images/excursion/excursion-1.webp">
+                <img src="images/excursion/excursion-1.jpg" alt="Подземная Рускеала" width="427" height="335"
+                  loading="lazy" draggable="false">
+              </picture>
+              <div class="excursion__content">
+                <h3 class="excursion__title">Подземная Рускеала</h3>
+                <ul class="excursion__text">
+                  <li>Продолжительность до 60 мин.</li>
+                  <li>Дистанция 850 м.</li>
+                  <li>Возрастное ограничение 7+</li>
+                </ul>
+                <a href="#excursions" class="excursion__link">Подробнее</a>
+              </div>
+            </li>
+
+            <li class="excursions__slider-item excursion">
+              <picture class="excursion__img">
+                <source media="(max-width: 767px)" type="image/webp" srcset="images/excursion/excursion-2-mobile.webp"
+                  width="346" height="271">
+                <source media="(max-width: 767px)" type="image/jpg" srcset="images/excursion/excursion-2-mobile.jpg"
+                  width="346" height="271">
+
+                <source type="image/webp" srcset="images/excursion/excursion-2.webp">
+                <img src="images/excursion/excursion-2.jpg" alt="Мраморный каньон" width="427" height="335"
+                  loading="lazy" draggable="false">
+              </picture>
+              <div class="excursion__content">
+                <h3 class="excursion__title">Мраморный каньон</h3>
+                <ul class="excursion__text">
+                  <li>Длительность 1 ч 15 мин</li>
+                  <li>Дистанция 1300 м.</li>
+                  <li>Без возрастных ограничений</li>
+                </ul>
+                <a href="#excursions" class="excursion__link">Подробнее</a>
+              </div>
+            </li>
+
+            <li class="excursions__slider-item excursion">
+              <picture class="excursion__img">
+                <source media="(max-width: 767px)" type="image/webp" srcset="images/excursion/excursion-3-mobile.webp"
+                  width="346" height="271">
+                <source media="(max-width: 767px)" type="image/jpg" srcset="images/excursion/excursion-3-mobile.jpg"
+                  width="346" height="271">
+
+                <source type="image/webp" srcset="images/excursion/excursion-3.webp">
+                <img src="images/excursion/excursion-3.jpg" alt="Дайвинг" width="427" height="335" loading="lazy"
+                  draggable="false">
+              </picture>
+              <div class="excursion__content">
+                <h3 class="excursion__title">Дайвинг</h3>
+                <p class="excursion__text">Погружения в Мраморном каньоне — это уникальная возможность увидеть скрытое
+                  от
+                  глаз большинства.</p>
+                <a href="#excursions" class="excursion__link">Подробнее</a>
+              </div>
+            </li>
+
+            <li class="excursions__slider-item excursion">
+              <picture class="excursion__img">
+                <source media="(max-width: 767px)" type="image/webp" srcset="images/excursion/excursion-1-mobile.webp"
+                  width="346" height="271">
+                <source media="(max-width: 767px)" type="image/jpg" srcset="images/excursion/excursion-1-mobile.jpg"
+                  width="346" height="271">
+
+                <source type="image/webp" srcset="images/excursion/excursion-1.webp">
+                <img src="images/excursion/excursion-1.jpg" alt="Подземная Рускеала" width="427" height="335"
+                  loading="lazy" draggable="false">
+              </picture>
+              <div class="excursion__content">
+                <h3 class="excursion__title">Подземная Рускеала</h3>
+                <p class="excursion__text">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+                <a href="#excursions" class="excursion__link">Подробнее</a>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+
+        <div class="excursions__slider-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about__container container">
+
+      <h2 class="about__title">Рускеала это:</h2>
+
+      <div class="about__slider">
+
+        <div class="about__slider-controls">
+          <button type="button" aria-label="Назад" class="about__slider-btn about__slider-btn--prev" disabled>
+            <svg width="14" height="12" fill="white">
+              <use xlink:href="#sprite-arrow-left"></use>
+            </svg>
+          </button>
+          <button type="button" aria-label="Вперед" class="about__slider-btn about__slider-btn--next">
+            <svg width="14" height="12" fill="white">
+              <use xlink:href="#sprite-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="about__slider-wrapper">
+
+          <ul class="about__slider-list">
+
+            <li class="about__slider-item inner-slider">
+
+              <div class="inner-slider__content">
+                <h2 class="inner-slider__title">Завораживающие природные красоты</h2>
+                <p class="inner-slider__description">
+                  Горный Парк Рускеала – уникальная достопримечательность Карелии! Живописные мраморные скалы отражаются
+                  в зеленоватой глади чистейших озёр! Рускеала - символ возрождения карельской земли, символ гармонии
+                  человека и природы! Рускеала – жемчужина Северного Приладожья!
+                </p>
+              </div>
+
+              <div class="inner-slider__wrapper">
+                <ul class="inner-slider__list">
+
+                  <li class="inner-slider__item inner-slider__item--active">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-1.webp">
+
+                      <img src="images/about/about-1.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                  <li class="inner-slider__item">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-2.webp">
+
+                      <img src="images/about/about-2.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                  <li class="inner-slider__item ">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-3.webp">
+
+                      <img src="images/about/about-3.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="about__slider-item inner-slider">
+
+              <div class="inner-slider__content">
+                <h2 class="inner-slider__title">Завораживающие природные красоты 2</h2>
+                <p class="inner-slider__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tempora rerum aspernatur sint ab
+                  molestiae quaerat, modi officiis accusamus corporis nemo obcaecati, quod odit ut perspiciatis maxime
+                  quae mollitia? Voluptate.
+                </p>
+              </div>
+
+              <div class="inner-slider__wrapper">
+                <ul class="inner-slider__list">
+
+                  <li class="inner-slider__item">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-1.webp">
+
+                      <img src="images/about/about-1.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                  <li class="inner-slider__item">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-2.webp">
+
+                      <img src="images/about/about-2.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                  <li class="inner-slider__item ">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-3.webp">
+
+                      <img src="images/about/about-3.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                  <li class="inner-slider__item ">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-4.webp">
+
+                      <img src="images/about/about-4.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="about__slider-item inner-slider">
+
+              <div class="inner-slider__content">
+                <h2 class="inner-slider__title">Завораживающие природные красоты 3</h2>
+                <p class="inner-slider__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reprehenderit delectus error esse
+                  nesciunt ipsum impedit? Hic, impedit voluptatibus aut dolorem corrupti labore nisi! Fugit vitae modi
+                  sed asperiores voluptatum.
+                </p>
+              </div>
+
+              <div class="inner-slider__wrapper">
+                <ul class="inner-slider__list">
+
+                  <li class="inner-slider__item inner-slider__item--active">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-1.webp">
+
+                      <img src="images/about/about-1.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                  <li class="inner-slider__item">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-2.webp">
+
+                      <img src="images/about/about-2.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="about__slider-item inner-slider">
+
+              <div class="inner-slider__content">
+                <h2 class="inner-slider__title">Завораживающие природные красоты 4</h2>
+                <p class="inner-slider__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reprehenderit delectus error esse
+                  nesciunt ipsum impedit? Hic, impedit voluptatibus aut dolorem corrupti labore nisi! Fugit vitae modi
+                  sed asperiores voluptatum.
+                </p>
+              </div>
+
+              <div class="inner-slider__wrapper">
+                <ul class="inner-slider__list">
+
+                  <li class="inner-slider__item inner-slider__item--active">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-1.webp">
+
+                      <img src="images/about/about-1.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                  <li class="inner-slider__item">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-2.webp">
+
+                      <img src="images/about/about-2.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="about__slider-item inner-slider">
+
+              <div class="inner-slider__content">
+                <h2 class="inner-slider__title">Завораживающие природные красоты 5</h2>
+                <p class="inner-slider__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reprehenderit delectus error esse
+                  nesciunt ipsum impedit? Hic, impedit voluptatibus aut dolorem corrupti labore nisi! Fugit vitae modi
+                  sed asperiores voluptatum.
+                </p>
+              </div>
+
+              <div class="inner-slider__wrapper">
+                <ul class="inner-slider__list">
+
+                  <li class="inner-slider__item inner-slider__item--active">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-1.webp">
+
+                      <img src="images/about/about-1.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                  <li class="inner-slider__item">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-2.webp">
+
+                      <img src="images/about/about-2.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                        draggable="false">
+                    </picture>
+                  </li>
+
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="about__slider-item inner-slider">
+
+              <div class="inner-slider__content">
+                <h2 class="inner-slider__title">Завораживающие природные красоты 6</h2>
+                <p class="inner-slider__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores reprehenderit delectus error esse
+                  nesciunt ipsum impedit? Hic, impedit voluptatibus aut dolorem corrupti labore nisi! Fugit vitae modi
+                  sed asperiores voluptatum.
+                </p>
+              </div>
+
+              <picture class="inner-slider__image">
+                <source media="(max-width: 767px)" type="image/webp" srcset="images/about/about-1.webp">
+
+                <img src="images/about/about-1.jpg" alt="Рускеала это" width="345" height="345" loading="lazy"
+                  draggable="false">
+              </picture>
+
+              <div class="inner-slider__wrapper">
+                <ul class="inner-slider__list">
+
+                </ul>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="about__slider-pagination">
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
