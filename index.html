@@ -1,13 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Рускеала Горный Парк sit amet consectetur adipisicing elit. Rerum consequuntur aliquid ipsa officiis eveniet? Ipsam nobis qui minima, dignissimos laboriosam reprehenderit atque, magni consequatur ipsum, totam iste blanditiis veritatis? Rerum dolorum ut facilis, voluptatum cumque nobis consequatur quis unde ipsa deserunt blanditiis, dolore adipisci rem voluptates reprehenderit nesciunt laudantium animi possimus quos vero voluptate! Blanditiis dignissimos magnam ullam eligendi vel, temporibus sapiente voluptatum, suscipit corporis explicabo eius repudiandae dolor distinctio quis iure nisi maiores consequuntur officiis iste perspiciatis possimus numquam obcaecati. Voluptas necessitatibus rem molestias eos natus, aperiam, veritatis maxime odio optio ipsam ullam quibusdam libero temporibus voluptate consequuntur perferendis accusamus praesentium commodi exercitationem atque in assumenda? Esse officiis dolores omnis distinctio repellat magnam commodi voluptates, aspernatur nostrum qui assumenda ipsum sit, sequi earum iusto hic, inventore temporibus corrupti minima." />
   <title>Рускеала Горный Парк</title>
-  <script type="module" crossorigin src="./assets/index-ClPaCxeK.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-32Qri8s2.css">
+  <link rel="preload" href="./fonts/Panton-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Panton-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Panton-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Panton-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Panton-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" crossorigin src="./assets/index-YuAvzlMF.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CEFaC93z.css">
 </head>
 
 <body>
@@ -67,7 +73,7 @@
 
 
   <!-- HEADER -->
-  <header class="header">
+  <header class="header" id="header">
 
     <div class="header__top ">
       <div class="header__top-container container">
@@ -86,18 +92,18 @@
         <div class="header__route">
           <span class="header__route-title">Как доехать?</span>
 
-          <a href="#" class="header__route-link">
+          <a href="/#header" class="header__route-link">
             <div class="header__route-icon">
-              <svg width="10" height="13" fill="#fff">
+              <svg width="10" height="13" fill="#fff" aria-hidden="true">
                 <use xlink:href="#sprite-geo"></use>
               </svg>
             </div>
             <span class="header__route-text">из Санкт-Петербурга</span>
           </a>
 
-          <a href="#" class="header__route-link">
+          <a href="/#header" class="header__route-link">
             <div class="header__route-icon">
-              <svg width="10" height="13" fill="#fff">
+              <svg width="10" height="13" fill="#fff" aria-hidden="true">
                 <use xlink:href="#sprite-geo"></use>
               </svg>
             </div>
@@ -111,7 +117,7 @@
           <li class="header__contacts-item">
             <a href="tel:+79216215050" class="header__contacts-link">
               <div class="header__contacts-icon">
-                <svg width="11" height="11" fill="#fff">
+                <svg width="11" height="11" fill="#fff" aria-hidden="true">
                   <use xlink:href="#sprite-phone"></use>
                 </svg>
               </div>
@@ -120,9 +126,9 @@
           </li>
 
           <li class="header__contacts-item">
-            <a href="#" class="header__contacts-link">
+            <a href="/#header" class="header__contacts-link">
               <div class="header__contacts-icon">
-                <svg width="17" height="17" fill="#fff">
+                <svg width="17" height="17" fill="#fff" aria-hidden="true">
                   <use xlink:href="#sprite-owl"></use>
                 </svg>
               </div>
@@ -130,9 +136,9 @@
           </li>
 
           <li class="header__contacts-item">
-            <a href="#" class="header__contacts-link">
+            <a href="/#header" class="header__contacts-link">
               <div class="header__contacts-icon">
-                <svg width="17" height="17" fill="#fff">
+                <svg width="17" height="17" fill="#fff" aria-hidden="true">
                   <use xlink:href="#sprite-vk"></use>
                 </svg>
               </div>
@@ -140,9 +146,9 @@
           </li>
 
           <li class="header__contacts-item">
-            <a href="#" class="header__contacts-link">
+            <a href="/#header" class="header__contacts-link">
               <div class="header__contacts-icon">
-                <svg width="17" height="17" fill="#fff">
+                <svg width="17" height="17" fill="#fff" aria-hidden="true">
                   <use xlink:href="#sprite-tg"></use>
                 </svg>
               </div>
@@ -151,7 +157,7 @@
 
         </ul>
 
-        <a href="#" class="header__ticket-btn">Купить билет</a>
+        <a href="/#header" class="header__ticket-btn">Купить билет</a>
 
         <button type="button" class="header__menu-btn" aria-label="Меню">
           <span></span>
@@ -167,19 +173,20 @@
 
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#" class="header__nav-link">Главная</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">О парке</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">Билеты и цены</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">Рускеала детям</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">Кафе</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">Как добраться</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">Партнеры</a></li>
+            <li class="header__nav-item"><a href="/#header" class="header__nav-link">Главная</a></li>
+            <li class="header__nav-item"><a href="/#header" class="header__nav-link">О парке</a></li>
+            <li class="header__nav-item"><a href="/#header" class="header__nav-link">Билеты и цены</a></li>
+            <li class="header__nav-item"><a href="/#header" class="header__nav-link">Рускеала детям</a></li>
+            <li class="header__nav-item"><a href="/#header" class="header__nav-link">Кафе</a></li>
+            <li class="header__nav-item"><a href="/#header" class="header__nav-link">Как добраться</a></li>
+            <li class="header__nav-item"><a href="/#header" class="header__nav-link">Партнеры</a></li>
           </ul>
         </nav>
 
-        <a href="#" class="header__cart">
+        <a href="/#header" class="header__cart">
           <div class="header__cart-icon">
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-label="Корзина">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M19.4198 8.97296L16.2948 3.76463C16.0729 3.39484 15.5927 3.27505 15.2229 3.49692C14.8531 3.7188 14.7333 4.19901 14.9552 4.5688L18.0802 9.77713C18.3021 10.1469 18.7823 10.2667 19.1521 10.0448C19.5218 9.82296 19.6416 9.34276 19.4198 8.97296Z"
                 fill="#696C74" />
@@ -194,7 +201,7 @@
                 fill="#696C74" />
             </svg>
           </div>
-          <span class="header__cart-count">0</span>
+          <span class="header__cart-count" aria-label="Количество продуктов:">0</span>
         </a>
 
       </div>
@@ -202,23 +209,23 @@
 
     <div class="header__menu">
       <ul class="header__menu-list">
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Правила парка</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Цены</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Мероприятия</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Точки питания</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Развлечения для всей семьи</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Мастерские</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Сувенирные лавки</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Историко-культурный центр</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Официальная гостиница горного
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Правила парка</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Цены</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Мероприятия</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Точки питания</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Развлечения для всей семьи</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Мастерские</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Сувенирные лавки</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Историко-культурный центр</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Официальная гостиница горного
             парка</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Галерея</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">СМИ</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Партнеры</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Как добраться из спб, птз,
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Галерея</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">СМИ</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Партнеры</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Как добраться из спб, птз,
             москва</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
-        <li class="header__menu-item"><a href="#" class="header__menu-link">Форма обратной связи</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Контакты</a></li>
+        <li class="header__menu-item"><a href="/#header" class="header__menu-link">Форма обратной связи</a></li>
       </ul>
     </div>
 
@@ -228,13 +235,15 @@
 
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero__scroll-dot"></div>
 
     <div class="hero__bg">
       <picture>
-        <source type="image/webp" srcset="images/hero/hero-bg.webp" width="1440" height="909">
+        <source type="image/webp" media="(max-width: 767px)" srcset="images/hero/hero-bg.webp" width="1440"
+          height="753">
 
+        <source type="image/webp" srcset="images/hero/hero-bg.webp">
 
         <img fetchpriority="high" loading="eager" src="images/hero/hero-bg.png" alt="background" width="1440"
           height="909" draggable="false">
@@ -284,10 +293,10 @@
             <source media="(max-width: 767px)" type="image/webp" srcset="images/common/logo.webp" width="62"
               height="72">
             <source type="image/webp" srcset="images/common/logo.webp">
-            <img src="images/common/logo.png" alt="Рускеала" width="64" height="80">
+            <img src="images/common/logo.png" alt="Рускеала" width="80" height="90">
           </picture>
           <h2 class="hero__modal-title"></h2>
-          <img src="images/hero/hero-modal.webp" alt="" width="80" height="90" aria-hidden="true"
+          <img src="images/hero/hero-modal.webp" alt="" width="492" height="88" aria-hidden="true"
             class="hero__modal-decoration" draggable="false" loading="lazy">
         </div>
 
@@ -296,7 +305,8 @@
           <p class="hero__modal-description"></p>
 
           <button type="button" class="hero__modal-view" aria-label="АЭРОПАНОРАМЫ">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3B6F53" width="24" height="24">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3B6F53" width="24" height="24"
+              aria-hidden="true">
               <path
                 d="M9 3H15L17 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V6C2 5.44772 2.44772 5 3 5H7L9 3ZM12 19C15.3137 19 18 16.3137 18 13C18 9.68629 15.3137 7 12 7C8.68629 7 6 9.68629 6 13C6 16.3137 8.68629 19 12 19ZM12 17C9.79086 17 8 15.2091 8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17Z">
               </path>
@@ -331,13 +341,13 @@
             <li class="hero__menu-item">
               <h2 class="hero__menu-title">АЭРОПАНОРАМЫ</h2>
             </li>
-            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Белая гора</a></li>
-            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Бургерз</a></li>
-            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Большой каньон</a></li>
-            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Дор. справа от каньона</a></li>
-            <li class="hero__menu-item"><a href="#" class="hero__menu-link">ИКЦ</a></li>
-            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Кафе Лето</a></li>
-            <li class="hero__menu-item"><a href="#" class="hero__menu-link">Кафе Кахвила</a></li>
+            <li class="hero__menu-item"><a href="/#hero" class="hero__menu-link">Белая гора</a></li>
+            <li class="hero__menu-item"><a href="/#hero" class="hero__menu-link">Бургерз</a></li>
+            <li class="hero__menu-item"><a href="/#hero" class="hero__menu-link">Большой каньон</a></li>
+            <li class="hero__menu-item"><a href="/#hero" class="hero__menu-link">Дор. справа от каньона</a></li>
+            <li class="hero__menu-item"><a href="/#hero" class="hero__menu-link">ИКЦ</a></li>
+            <li class="hero__menu-item"><a href="/#hero" class="hero__menu-link">Кафе Лето</a></li>
+            <li class="hero__menu-item"><a href="/#hero" class="hero__menu-link">Кафе Кахвила</a></li>
           </ul>
 
         </div>
@@ -361,7 +371,7 @@
       <div class="gallery__container">
         <button class="gallery__close" aria-label="Закрыть галерею">&times;</button>
         <button class="gallery__prev" aria-label="Предыдущее фото">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white" aria-hidden="true">
             <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
           </svg>
         </button>
@@ -369,7 +379,7 @@
           <img class="gallery__image" src="" alt="">
         </div>
         <button class="gallery__next" aria-label="Следующее фото">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white" aria-hidden="true">
             <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
           </svg>
         </button>
@@ -465,14 +475,14 @@
       <div class="excursions__slider">
 
         <div class="slider-controls">
-          <a href="#excursions">Все экскурсии</a>
+          <a href="/#excursions">Все экскурсии</a>
           <button type="button" aria-label="Назад" class="slider-btn slider-btn--prev" disabled>
-            <svg width="14" height="12" fill="white">
+            <svg width="14" height="12" fill="white" aria-hidden="true">
               <use xlink:href="#sprite-arrow-left"></use>
             </svg>
           </button>
           <button type="button" aria-label="Вперед" class="slider-btn slider-btn--next">
-            <svg width="14" height="12" fill="white">
+            <svg width="14" height="12" fill="white" aria-hidden="true">
               <use xlink:href="#sprite-arrow-right"></use>
             </svg>
           </button>
@@ -499,7 +509,7 @@
                   <li>Дистанция 850 м.</li>
                   <li>Возрастное ограничение 7+</li>
                 </ul>
-                <a href="#excursions" class="card-link excursion__link">Подробнее</a>
+                <a href="/#excursions" class="card-link excursion__link">Подробнее</a>
               </div>
             </li>
 
@@ -521,7 +531,7 @@
                   <li>Дистанция 1300 м.</li>
                   <li>Без возрастных ограничений</li>
                 </ul>
-                <a href="#excursions" class="card-link excursion__link">Подробнее</a>
+                <a href="/#excursions" class="card-link excursion__link">Подробнее</a>
               </div>
             </li>
 
@@ -541,7 +551,7 @@
                 <p class="excursion__text">Погружения в Мраморном каньоне — это уникальная возможность увидеть скрытое
                   от
                   глаз большинства.</p>
-                <a href="#excursions" class="card-link excursion__link">Подробнее</a>
+                <a href="/#excursions" class="card-link excursion__link">Подробнее</a>
               </div>
             </li>
 
@@ -559,7 +569,7 @@
               <div class="excursion__content">
                 <h3 class="excursion__title">Подземная Рускеала</h3>
                 <p class="excursion__text">texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
-                <a href="#excursions" class="card-link excursion__link">Подробнее</a>
+                <a href="/#excursions" class="card-link excursion__link">Подробнее</a>
               </div>
             </li>
 
@@ -584,12 +594,12 @@
 
         <div class="about__slider-controls">
           <button type="button" aria-label="Назад" class="about__slider-btn about__slider-btn--prev" disabled>
-            <svg width="14" height="12" fill="white">
+            <svg width="14" height="12" fill="white" aria-hidden="true">
               <use xlink:href="#sprite-arrow-left"></use>
             </svg>
           </button>
           <button type="button" aria-label="Вперед" class="about__slider-btn about__slider-btn--next">
-            <svg width="14" height="12" fill="white">
+            <svg width="14" height="12" fill="white" aria-hidden="true">
               <use xlink:href="#sprite-arrow-right"></use>
             </svg>
           </button>
@@ -860,14 +870,14 @@
       <div class="events__slider">
 
         <div class="slider-controls">
-          <a href="#events">Все события</a>
+          <a href="/#events">Все события</a>
           <button type="button" aria-label="Назад" class="slider-btn slider-btn--prev" disabled>
-            <svg width="14" height="12" fill="white">
+            <svg width="14" height="12" fill="white" aria-hidden="true">
               <use xlink:href="#sprite-arrow-left"></use>
             </svg>
           </button>
           <button type="button" aria-label="Вперед" class="slider-btn slider-btn--next">
-            <svg width="14" height="12" fill="white">
+            <svg width="14" height="12" fill="white" aria-hidden="true">
               <use xlink:href="#sprite-arrow-right"></use>
             </svg>
           </button>
@@ -993,14 +1003,14 @@
 
       <div class="catering__slider">
         <div class="slider-controls">
-          <a href="#catering">Все точки питания</a>
+          <a href="/#catering">Все точки питания</a>
           <button type="button" aria-label="Назад" class="slider-btn slider-btn--prev" disabled>
-            <svg width="14" height="12" fill="white">
+            <svg width="14" height="12" fill="white" aria-hidden="true">
               <use xlink:href="#sprite-arrow-left"></use>
             </svg>
           </button>
           <button type="button" aria-label="Вперед" class="slider-btn slider-btn--next">
-            <svg width="14" height="12" fill="white">
+            <svg width="14" height="12" fill="white" aria-hidden="true">
               <use xlink:href="#sprite-arrow-right"></use>
             </svg>
           </button>
@@ -1025,7 +1035,7 @@
                     ржаного
                     теста с различными начинками.
                   </p>
-                  <a href="#catering" class="card-link catering-card__link">Подробнее</a>
+                  <a href="/#catering" class="card-link catering-card__link">Подробнее</a>
                 </div>
               </div>
             </li>
@@ -1045,7 +1055,7 @@
                     Просторное кафе, где можно вкусно пообедать, отдохнуть, и набраться сил после дороги или в перерыве
                     между осмотром достопримечательностей. На выбор гостей блюда европейской и карельской кухни.
                   </p>
-                  <a href="#catering" class="card-link catering-card__link">Подробнее</a>
+                  <a href="/#catering" class="card-link catering-card__link">Подробнее</a>
                 </div>
               </div>
             </li>
@@ -1066,7 +1076,7 @@
                     а
                     также, овощная котлета для любителей лёгкого меню, отборные свежие овощи и немного соуса.
                   </p>
-                  <a href="#catering" class="card-link catering-card__link">Подробнее</a>
+                  <a href="/#catering" class="card-link catering-card__link">Подробнее</a>
                 </div>
               </div>
             </li>
@@ -1087,7 +1097,7 @@
                     ржаного
                     теста с различными начинками.
                   </p>
-                  <a href="#catering" class="card-link catering-card__link">Подробнее</a>
+                  <a href="/#catering" class="card-link catering-card__link">Подробнее</a>
                 </div>
 
               </div>
@@ -1103,17 +1113,17 @@
 
 
   <!-- MAP -->
-  <section class="map" id="map">
+  <!-- <section class="map" id="map">
     <div class="map__container container">
       <h2 class="map__title">Где мы находимся </h2>
-      <a href="#map" class="map__how">Как добраться до Рускеала</a>
+      <a href="/#map" class="map__how">Как добраться до Рускеала</a>
       <div class="map__content">
         <script type="text/javascript" charset="utf-8" async
           src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa6e3027a7045417a37dffa352d9dfb68587bf4ee967157b2079cff598e7359e1&amp;width=1280&amp;height=600&amp;lang=ru_RU&amp;scroll=true">
           </script>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- PARTNERS -->
@@ -1219,7 +1229,7 @@
       <div class="footer__top">
 
         <div class="footer__left">
-          <a href="#footer" class="footer__logo">
+          <a href="/#footer" class="footer__logo">
             <picture class="header__logo-image">
               <source media="(max-width: 767px)" type="image/webp" srcset="images/common/logo.webp" width="59"
                 height="69">
@@ -1237,9 +1247,9 @@
             <span class="footer__contacts-hours">Пн-пт: 10:00-17:00</span>
             <ul class="footer__contacts-socials">
               <li>
-                <a href="#footer">
+                <a href="/#footer" aria-label="owl">
                   <div>
-                    <svg width="22" height="22" fill="#fff">
+                    <svg width="22" height="22" fill="#fff" aria-hidden="true">
                       <use xlink:href="#sprite-owl"></use>
                     </svg>
                   </div>
@@ -1247,9 +1257,9 @@
               </li>
 
               <li>
-                <a href="#footer">
+                <a href="/#footer" aria-label="vk">
                   <div>
-                    <svg width="22" height="22" fill="#fff">
+                    <svg width="22" height="22" fill="#fff" aria-hidden="true">
                       <use xlink:href="#sprite-vk"></use>
                     </svg>
                   </div>
@@ -1257,9 +1267,9 @@
               </li>
 
               <li>
-                <a href="#footer">
+                <a href="/#footer" aria-label="tg">
                   <div>
-                    <svg width="22" height="22" fill="#fff">
+                    <svg width="22" height="22" fill="#fff" aria-hidden="true">
                       <use xlink:href="#sprite-tg"></use>
                     </svg>
                   </div>
@@ -1275,43 +1285,43 @@
             <li class="footer__menu-title">
               <h3>Меню</h3>
             </li>
-            <li class="footer__menu-item"><a href="#footer">Главная</a></li>
-            <li class="footer__menu-item"><a href="#footer">О парке </a></li>
-            <li class="footer__menu-item"><a href="#footer">Билеты и цены</a></li>
-            <li class="footer__menu-item"><a href="#footer">Рускеала детям</a></li>
-            <li class="footer__menu-item"><a href="#footer">Кафе</a></li>
-            <li class="footer__menu-item"><a href="#footer">Как добраться</a></li>
-            <li class="footer__menu-item"><a href="#footer">Партнеры</a></li>
+            <li class="footer__menu-item"><a href="/#footer">Главная</a></li>
+            <li class="footer__menu-item"><a href="/#footer">О парке </a></li>
+            <li class="footer__menu-item"><a href="/#footer">Билеты и цены</a></li>
+            <li class="footer__menu-item"><a href="/#footer">Рускеала детям</a></li>
+            <li class="footer__menu-item"><a href="/#footer">Кафе</a></li>
+            <li class="footer__menu-item"><a href="/#footer">Как добраться</a></li>
+            <li class="footer__menu-item"><a href="/#footer">Партнеры</a></li>
           </ul>
 
           <ul class="footer__excursions">
             <li class="footer__excursions-title">
               <h3>Экскурсии и развлечение</h3>
             </li>
-            <li class="footer__excursions-item"><a href="#footer">Историко-культурный центр</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Подземная Рускеала</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Дорогой горных мастеров</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Мраморный каньон</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Водная прогулка на лодке</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Водная прогулка на платформе</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Конный экипаж</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Водные прогулки на озере Светлое</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Катание на квадроциклах</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Троллей (Zip-line)</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Тарзанка (прыжок с верёвкой)</a></li>
-            <li class="footer__excursions-item"><a href="#footer">Дайвинг</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Историко-культурный центр</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Подземная Рускеала</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Дорогой горных мастеров</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Мраморный каньон</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Водная прогулка на лодке</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Водная прогулка на платформе</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Конный экипаж</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Водные прогулки на озере Светлое</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Катание на квадроциклах</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Троллей (Zip-line)</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Тарзанка (прыжок с верёвкой)</a></li>
+            <li class="footer__excursions-item"><a href="/#footer">Дайвинг</a></li>
           </ul>
 
           <ul class="footer__shops">
             <li class="footer__shops-title">
               <h3>Кафе и магазины</h3>
             </li>
-            <li class="footer__shops-item"><a href="#footer">Кафе «Лето»</a></li>
-            <li class="footer__shops-item"><a href="#footer">Кафе «Русколка»</a></li>
-            <li class="footer__shops-item"><a href="#footer">Кафе «Колмас Бургерс»</a></li>
-            <li class="footer__shops-item"><a href="#footer">Кафе «Кахвила»</a></li>
-            <li class="footer__shops-item"><a href="#footer">Кафе «Норден Биф»</a></li>
-            <li class="footer__shops-item"><a href="#footer">Сувенирный магазин «Город мастеров»</a></li>
+            <li class="footer__shops-item"><a href="/#footer">Кафе «Лето»</a></li>
+            <li class="footer__shops-item"><a href="/#footer">Кафе «Русколка»</a></li>
+            <li class="footer__shops-item"><a href="/#footer">Кафе «Колмас Бургерс»</a></li>
+            <li class="footer__shops-item"><a href="/#footer">Кафе «Кахвила»</a></li>
+            <li class="footer__shops-item"><a href="/#footer">Кафе «Норден Биф»</a></li>
+            <li class="footer__shops-item"><a href="/#footer">Сувенирный магазин «Город мастеров»</a></li>
           </ul>
 
         </div>
@@ -1319,8 +1329,8 @@
       </div>
 
       <div class="footer__bottom">
-        <a href="#footer" class="footer__policy-link">Политика конфиденциальности</a>
-        <a href="#footer" class="footer__rules-link">Правила парка</a>
+        <a href="/#footer" class="footer__policy-link">Политика конфиденциальности</a>
+        <a href="/#footer" class="footer__rules-link">Правила парка</a>
         <span class="footer__policy-text">
           2025, Горный парк «Рускеала» © Все права защищены. Текст, изображения, графика, звуковые файлы, анимационные
           файлы, видеофайлы и их компоновка защищены авторским правом и прочими положениями о защите интеллектуальной
